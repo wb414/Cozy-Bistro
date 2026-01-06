@@ -13,8 +13,9 @@ setInterval(changeImage,  3000);
 window.onload = function ( )  {
 alert( "Welcome to The Cozy Bistro! ");
 };
-
+//functions are used 
 function submitForm(event) {
 event.preventDefault( );
 alert(" Thank you for your message! We will contact you soon. ");
 }
+
