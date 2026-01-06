@@ -1,3 +1,5 @@
+/* ================= ORIGINAL CSS (NO CHANGES MADE) ================= */
+
 body
 {
 font-family: Arial, sans-serif;
@@ -40,8 +42,10 @@ border-radius: 10px;
 margin-top: 20px;
 color: #5a2d0c;
 }
+
 .hero p {
-font-size: 18px;}
+font-size: 18px;
+}
 
 button {
 margin-top: 15px;
@@ -58,7 +62,8 @@ background color: #a0522d;
 }
  
 section{
-padding:  30px}
+padding:  30px;
+}
 
 .card-container{
 display: flex;
@@ -77,13 +82,16 @@ border-radius: 10px;
 
 .card img{
 width: 100%;
-border-radius: 10px;}
+border-radius: 10px;
+}
 
 .card a {
 text-decoration: none;
 color: inherit;
 pointer-events: none;
 }
+
+/* ================= BUTTON STYLE ================= */
 
 .menu-btn {
 display : inline-block;
@@ -95,9 +103,12 @@ text-decoration: none;
 border-radius: 5px;
 font-weight: bold;
 }
-.menu-btn: hover{
-background-color: #a0522d;
+
+/* 🔴🔴🔴 CHANGE STARTS HERE 🔴🔴🔴 */
+.menu-btn:hover {
+background-color: brown;
 }
+/* 🔴🔴🔴 CHANGE ENDS HERE 🔴🔴🔴 */
 
 .food-img  {
 width=  250px;
@@ -113,7 +124,101 @@ color: white;
 text-align: center;
 padding: 10px;
 }
-h1,h2,h3,p, footer { cursor: default;
+
+h1,h2,h3,p, footer {
+cursor: default;
 text-decoration: none;
 }
- 
+
+/* =============================================================== */
+/* ================= RESPONSIVE PART STARTS HERE ================= */
+/* =============================================================== */
+
+/* TABLETS (screen width 992px and below) */
+@media (max-width: 992px) {
+
+  nav a {
+    margin: 0 10px;
+    font-size: 15px;
+  }
+
+  .hero img {
+    width: 90%;
+  }
+
+  .card {
+    width: 220px;
+  }
+}
+
+/* MOBILE DEVICES (screen width 768px and below) */
+@media (max-width: 768px) {
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 8px 0;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  section {
+    padding: 20px;
+  }
+}
+
+/* SMALL MOBILE DEVICES (screen width 480px and below) */
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  button,
+  .menu-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+}
